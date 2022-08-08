@@ -1,1 +1,5 @@
-print("Hello Entrei Point")
+
+
+def main():
+    print("Entry point")
+    
