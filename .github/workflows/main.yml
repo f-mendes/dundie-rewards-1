@@ -1,14 +1,15 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
-
 name: CI
 
-on:
+on: 
   push:
-    branches: [ "main" ]
+    branches:
+      - "main"
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - "main"
+
   workflow_dispatch:
+
 
 jobs:
   tests:
@@ -19,11 +20,11 @@ jobs:
         os: [ubuntu-latest]
     runs-on: ${{matrix.os}}
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-python@v2
-      with:
-        python-version: ${{matrix.python-version}}
-    - name: Install Project
-      run: pip install '.[test]'    
-    - name: Run Tests
-      run: pytest -vv dundie/tests dundie/integration
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: ${{matrix.python-version}}
+      - name: Install Project 
+        run: pip install '.[test]'
+      - name: Run tests 
+        run: pytest -vv dundie/tests dundie/integration
