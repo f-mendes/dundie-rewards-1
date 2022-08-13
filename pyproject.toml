@@ -5,3 +5,7 @@ testpaths = [
     "dundie/tests",
     "dundie/integration",
 ]
+
+[tool.flake8]
+exclude = ['.venv','.build']
+max_line_length = 79
