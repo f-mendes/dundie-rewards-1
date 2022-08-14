@@ -1,5 +1,7 @@
 import pytest
+
 from dundie.core import load
+
 from .constants import PEOPLE_FILE
 
 
@@ -8,4 +10,4 @@ from .constants import PEOPLE_FILE
 def test_load():
     """Test function load function."""
     assert len(load(PEOPLE_FILE)) == 2
-    assert load(PEOPLE_FILE)[0][0] == 'F'
+    assert load(PEOPLE_FILE)[0][0] == "F"
