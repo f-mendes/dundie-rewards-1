@@ -1,6 +1,7 @@
 import os
 from setuptools import setup, find_packages
 
+
 def read(*paths):
     """Read the contents of a text file safely.
     >>> read("dundie", "VERSION")
@@ -13,7 +14,7 @@ def read(*paths):
     with open(filepath) as file_:
         return file_.read().strip()
 
-        
+
 def read_requirements(path):
     """Return a list of requirements from a text file"""
     return [
@@ -22,7 +23,7 @@ def read_requirements(path):
         if not line.startswith(("#", "git+", '"', '-'))
     ]
 
-    
+
 setup(
     name="dundie",
     version="0.1.0",

@@ -16,6 +16,10 @@ ipython:
 lint:
 	@.venv/bin/pflake8
 
+fmt:
+	@.venv/bin/isort dundie dundie/tests dundie/integration
+	@.venv/bin/black dundie dundie/tests dundie/integration
+
 test:
 	@.venv/bin/pytest -s
 
