@@ -3,3 +3,6 @@ flake8==4.0.1
 pyproject-flake8
 isort
 black
+click
+rich
+rich-click
