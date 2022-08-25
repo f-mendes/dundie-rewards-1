@@ -33,13 +33,13 @@ def load(filepath):
     """
 
     table = Table(title="Dunder Mifflin Associates")
-    header = ["name", "dept", "role", "e-mail"]
+    header = ["name", "dept", "role", "created", "e-mail"]
     for head in header:
         table.add_column(head, style="magenta")
 
     result = core.load(filepath)
     for person in result:
-        table.add_row(*[row.strip() for row in person.split(",")])
+        table.add_row(*[str(value) for value in person.values()])
 
     console = Console()
     console.print(table)

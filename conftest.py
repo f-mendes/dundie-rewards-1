@@ -33,6 +33,6 @@ def setup_testing_database(request):
     force database.py to use that filepath
     """
     tmpdir = request.getfixturevalue("tmpdir")
-    test_db = tmpdir.join("database.test.db")
+    test_db = str(tmpdir.join("database.test.json"))
     with patch("dundie.database.DATABASE_PATH", test_db):
         yield
