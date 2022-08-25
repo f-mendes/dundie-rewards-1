@@ -1,27 +1,42 @@
 {
     "people": {
-        "joe@doe.com": {
-            "name": "Joe Doe",
-            "role": "Salesman",
-            "dept": "Sales"
+        "fm@dundie.com": {
+            "name": "Felipe Mendes",
+            "dept": "TI",
+            "role": "Software developer"
+        },
+        "im@dundie.com": {
+            "name": "Isaac Mendes",
+            "dept": "TI",
+            "role": "Software developer"
         }
     },
     "balance": {
-        "joe@doe.com": 500
+        "fm@dundie.com": 500,
+        "im@dundie.com": 500
     },
     "movement": {
-        "joe@doe.com": [
+        "fm@dundie.com": [
             {
-                "date": "",
-                "value": 0,
-                "actor": "system"
+                "date": "2022-08-25T07:44:43.634622",
+                "actor": "system",
+                "value": 500
+            }
+        ],
+        "im@dundie.com": [
+            {
+                "date": "2022-08-25T07:44:43.636987",
+                "actor": "system",
+                "value": 500
             }
         ]
     },
-    "user": {
-        "joe@doe.com": {
-            "password": "sdjfbsdjhfbsjhd",
-            "is_admin": false
+    "users": {
+        "fm@dundie.com": {
+            "password": "025rPsim"
+        },
+        "im@dundie.com": {
+            "password": "MmDi7ZFH"
         }
     }
 }
