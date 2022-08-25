@@ -40,3 +40,4 @@ def test_add_person_for_the_first_time():
 def test_negative_add_person_invalid_email():
     with pytest.raises(ValueError):
         add_person({}, ".@bla", {})
+
