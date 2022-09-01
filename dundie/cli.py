@@ -71,7 +71,6 @@ def show(output, **query):
     for person in result:
         table.add_row(*[str(value) for value in person.values()])
 
-    
     console.print(table)
 
 
