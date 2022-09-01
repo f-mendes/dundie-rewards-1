@@ -58,8 +58,11 @@ def show(output, **query):
         with open(output, "w") as output_file:
             output_file.write(json.dumps(result))
 
+    console = Console()
+
     if not result:
-        print("Nothing to show")
+        console.print("Nothing to show")
+        return
 
     table = Table(title="Dunder Mifflin Report")
     for key in result[0]:
@@ -68,7 +71,6 @@ def show(output, **query):
     for person in result:
         table.add_row(*[str(value) for value in person.values()])
 
-    console = Console()
     console.print(table)
 
 
