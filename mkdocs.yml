@@ -1,0 +1,8 @@
+site_name: Dundie Rewards CLI
+theme: readthedocs
+nav:
+  - Home: index.md
+  - User Guide:
+    - 'Getting Started': how_to_install.md
+    - How to use: how_to_use.md
+  - Roadmap: roadmap.md
