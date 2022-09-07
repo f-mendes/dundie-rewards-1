@@ -27,7 +27,7 @@ exclude = '''
 
 [tool.isort]
 profile = "black"
-src_paths = ["dundie", "dundie/ests", "dundie/integration"]
+src_paths = ["dundie", "tests", "integration"]
 multi_line_output = 3  # VHI
 line_length = 79
 force_grid_wrap = 0

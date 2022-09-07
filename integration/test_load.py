@@ -1,8 +1,8 @@
 import pytest
 from click.testing import CliRunner
-from tests.constants import PEOPLE_FILE
 
 from dundie.cli import load, main
+from tests.constants import PEOPLE_FILE
 
 cmd = CliRunner()
 
